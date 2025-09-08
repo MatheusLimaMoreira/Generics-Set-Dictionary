@@ -1,6 +1,6 @@
 ﻿using Generics_Set_Dictionary;
 
-PrintService printService = new PrintService();
+PrintService<int> printService = new PrintService<int>();
 
 Console.WriteLine("How many values? ");
 int n = int.Parse(Console.ReadLine());

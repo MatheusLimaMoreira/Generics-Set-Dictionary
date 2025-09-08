@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Generics_Set_Dictionary
 {
-    internal class PrintService
+    internal class PrintService<T>
     {
-        private int[] _values = new int[10]; // Vetor de inteiros com tamanho 10
+        private T[] _values = new T[10]; // Vetor de inteiros com tamanho 10
         private int _count = 0; // conta quantos elementos foram adicionados
 
-        public void AddValue(int value)
+        public void AddValue(T value)
         {
             if (_count == 10) // Verifica se o vetor está cheio
             {
@@ -22,7 +22,7 @@ namespace Generics_Set_Dictionary
             _count++; // Incrementa o contador
         }
 
-        public int First()
+        public T First()
         {
             if (_count == 0) // Verifica se o vetor está cheio
             {
