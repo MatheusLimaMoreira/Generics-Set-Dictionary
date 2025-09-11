@@ -28,7 +28,7 @@ namespace RestricoesGenerics.Entities
             {
                 throw new ArgumentException("Comparing error: argument is not a Product");
             }
-            Products other = obj as Products;
+            Product other = obj as Product;
             return Price.CompareTo(other.Price);
         } 
     }

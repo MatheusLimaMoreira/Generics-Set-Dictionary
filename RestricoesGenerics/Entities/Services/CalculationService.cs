@@ -1,6 +1,6 @@
 ﻿namespace RestricoesGenerics.Entities.Services
 {
-    internal class CauculationService
+    internal class CalculationService
     {
         public T Max<T>(List<T> list) where T : IComparable
         {
