@@ -4,12 +4,12 @@ using System.Globalization;
 
 namespace RestricoesGenerics.Entities
 {
-    internal class Products
+    internal class Product : IComparable
     {
         public string Name { get; set; }
         public double Price { get; set; }
 
-        public Products(string name, double price)
+        public Product(string name, double price)
         {
             Name = name;
             Price = price;
@@ -21,5 +21,15 @@ namespace RestricoesGenerics.Entities
                 + ", "
                 + Price.ToString("F2");
         }
+
+        public int CompareTo(object obj)
+        {
+            if (!(obj is Product))
+            {
+                throw new ArgumentException("Comparing error: argument is not a Product");
+            }
+            Products other = obj as Products;
+            return Price.CompareTo(other.Price);
+        } 
     }
 }

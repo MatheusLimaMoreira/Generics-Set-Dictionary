@@ -1,7 +1,7 @@
 ﻿using RestricoesGenerics.Entities.Services;
 using RestricoesGenerics.Entities;
 
-List<Products> list = new List<Products>();
+List<Product> list = new List<Product>();
 
 Console.WriteLine("Enter N: ");
 int n = int.Parse(Console.ReadLine());
@@ -9,12 +9,13 @@ int n = int.Parse(Console.ReadLine());
 for (int i = 0; i < n; i++)
 {
     string[] vect = Console.ReadLine().Split(',');
-    int x = int.Parse(Console.ReadLine());
-    list.Add(x);
+    string name = vect[0];  
+    double price = double.Parse(vect[1]);     
+    list.Add(new Product(name, price));
 }
 
-CauculationService cs = new CauculationService();
-int max = cs.Max(list);
+CalculationService cs = new CalculationService();
+Product max = cs.Max(list);
 
 Console.WriteLine("Max: ");
 Console.WriteLine(max); 
