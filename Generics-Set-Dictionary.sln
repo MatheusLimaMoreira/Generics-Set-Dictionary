@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic_PM1(Reuso)", "Gener
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestricoesGenerics", "RestricoesGenerics\RestricoesGenerics.csproj", "{21EC6F4E-CCD7-4671-BAD8-E0EE3A3D05A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetHashCode-Equals", "GetHashCode-Equals\GetHashCode-Equals.csproj", "{2285DCBA-AA85-4C7B-9230-378061BD7C7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{21EC6F4E-CCD7-4671-BAD8-E0EE3A3D05A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21EC6F4E-CCD7-4671-BAD8-E0EE3A3D05A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21EC6F4E-CCD7-4671-BAD8-E0EE3A3D05A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2285DCBA-AA85-4C7B-9230-378061BD7C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2285DCBA-AA85-4C7B-9230-378061BD7C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2285DCBA-AA85-4C7B-9230-378061BD7C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2285DCBA-AA85-4C7B-9230-378061BD7C7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
